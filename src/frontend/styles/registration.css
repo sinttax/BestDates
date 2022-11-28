@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: flex-start;
   gap: 3rem;
-  height: 90%;
+  height: 95%;
 }
 
 .logo {
@@ -86,7 +86,7 @@
 }
 
 .registration {
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   font-size: 3rem;
   color: var(--light-main-color);
   font-family: 'Noto Serif Display', serif;

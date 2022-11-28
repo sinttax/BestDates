@@ -85,3 +85,7 @@ img {
   z-index: -1;
   object-fit: cover;
 }
+
+img:hover {
+  opacity: 0.9;
+}

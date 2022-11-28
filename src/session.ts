@@ -16,7 +16,7 @@ const connection = mysql2.createPool(options);
 const sessionStore = new mysqlStore({}, connection);
 
 export const sessions = session({
-  name: 'mySession',
+  name: config.session.name,
   resave: false,
   saveUninitialized: false,
   store: sessionStore,
@@ -26,5 +26,5 @@ export const sessions = session({
     sameSite: false,
     secure: false,
   },
-  secret: 'mostsecret!',
+  secret: config.session.secret!,
 });
