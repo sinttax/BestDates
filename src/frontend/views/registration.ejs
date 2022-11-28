@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Dates | Registration</title>
+  <link rel="icon" type="image/x-icon" href="favicon-16x16.png">
+  <link rel="stylesheet" href="root.css">
+  <link rel="stylesheet" href="registration.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <div class="logo">
+        <svg class="heart" viewBox="0 0 32 29.6">
+          <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+        c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+        </svg>
+        <div class="sticks">
+          <div class="class stick-left"></div>
+          <div class="class stick-right"></div>
+        </div>
+        <h1 class="header">Best Dates</h1>
+      </div>
+      <div class="error-box">
+        <h1 class="registration">Registration</h1>
+        <p class="error-msg"></p>
+      </div>
+      <div class="form-wrapper">
+        <form id="regForm" enctype="multipart/form-data" method="post">
+          <!-- CREDENTIALS -->
+          <div class="credentials">
+            <h2>Account Login:</h2>
+            <!-- E-MAIL -->
+            <div class="box">
+              <label for="email"><i class="fa-solid fa-star"></i> E-mail:</label>
+              <input type="email" name="user_email" id="email" required email>
+            </div>
+            <!-- USERNAME -->
+            <div class="box">
+              <label for="username"><i class="fa-solid fa-star"></i> Username:</label>
+              <input type="text" name="user_name" id="username" required>
+            </div>
+            <!-- PASSWORD -->
+            <div class="box">
+              <label for="password"><i class="fa-solid fa-star"></i> Password: </label>
+              <div class="password">
+                <input type="password" name="user_password" id="password" required>
+                <i class="fa-solid fa-eye"></i>
+              </div>
+            </div>
+            <!-- PASSWORD CONFIRM -->
+            <div class="box">
+              <label for="password-confirm"><i class="fa-solid fa-star"></i> Password Confirm:</label>
+              <div class="password">
+                <input type="password" name="repeat_password" id="password-confirm" required>
+              </div>
+            </div>
+          </div>
+
+          <!-- PERSONAL DETAILS -->
+          <div class="personal-details">
+            <h2>Personal Details:</h2>
+            <!-- GENDER -->
+            <div class="gender-box">
+              <label for="gender"><i class="fa-solid fa-star"></i>Are you?</label>
+              <select name="gender" id="gender">
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+              </select>
+            </div>
+
+            <!-- AGE -->
+            <div class="box">
+              <label for="age"><i class="fa-solid fa-star"></i>Age: <span class="age-span">20</span></label>
+              <input id="age" name="age" type="range" [min]="13" max="100" value="20">
+            </div>
+            <!-- HEIGHT -->
+            <div class="box">
+              <label for="height">Height: <span class="height-span">170cm</span></label>
+              <input id="height" name="height" type="range" min="100" max="230" value="170">
+            </div>
+            <!-- WEIGHT -->
+            <div class="box">
+              <label for="weight">Weight: <span class="weight-span">70kg</span></label>
+              <input id="weight" name='weight' type="range" min="30" max="240" value="70">
+            </div>
+            <!-- EYE COLOR -->
+            <div class="box">
+              <label for="eye-color">Eye-color:</label>
+              <select name="eye_color" id="eye_color">
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="brown">Brown</option>
+                <option value="black">Black</option>
+              </select>
+            </div>
+
+          </div>
+          <!-- PERSONAL DETAILS -->
+          <div class="personal-details-2">
+            <!-- COUNTRY -->
+            <div class="box">
+              <label for="country"><i class="fa-solid fa-star"></i> Where do you live ?: </label>
+              <select name="country" id="country">
+                <option value="SVK">Slovakia</option>
+                <option value="CZE">Czech Republic</option>
+                <option value="HUN">Hungary</option>
+              </select>
+            </div>
+            <!-- ADDITIONAL - INFO -->
+            <div class="box">
+              <label for="additional-info">Tell us more about you:</label>
+              <textarea id="additional_info" class="textarea" name="additional_info" cols="18" rows="7"></textarea>
+            </div>
+            <!-- PROFILE - PHOTO  -->
+            <div class="box">
+              <label for="photo">Your best photo:</label>
+              <input name="photo" type="file" required>
+            </div>
+          </div>
+          <button class="submit-button" type="submit" met>SIGN UP!</button>
+        </form>
+      </div>
+      <!-- FOOTER -->
+      <div class="footer">
+        <p>Fields marked with "*" are required to fill</p>
+        <p>By signing up, you agree to our Terms and Conditions. Learn how we use your data in our Privacy Policy</p>
+      </div>
+    </div>
+  </div>
+  <script src="register.js"></script>
+  <script src="https://kit.fontawesome.com/a9a5d38889.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+.inner-container {
+  width: 1000px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  background-color: var(--light-main-color);
+}
+
+.menu {
+  background-color: var(--dark-main-color);
+  width: 200px;
+  gap: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  color: var(--light-main-color);
+}
+
+.name {
+  font-size: 1.6rem;
+}
+
+.logout-button {
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  color: var(--light-main-color);
+  cursor: pointer;
+}
+
+.app {
+  background-color: var(--light-main-color);
+  width: 800px;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+
+.main-part {
+  display: flex;
+  gap: 40px;
+}
+
+.main-part img {
+  height: 50rem;
+  width: 40rem;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.profile-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.info-box {
+  font-size: 0.8rem;
+}
+
+.main-part h2 {
+  font-size: 3rem;
+}
+
+.main-part h4 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.main-part h5 {
+  font-size: 1.6rem;
+  margin-bottom: 0.2rem;
+}
+
+.main-part p {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}

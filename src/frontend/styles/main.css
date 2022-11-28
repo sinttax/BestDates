@@ -1,0 +1,157 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
+  height: 90%;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.heart {
+  fill: var(--light-main-color);
+  position: relative;
+  top: 5px;
+  width: 80px;
+  animation: pulse 1s ease infinite;
+  align-self: center;
+}
+
+.sticks {
+  display: flex;
+  gap: 8rem;
+}
+
+.stick-left,
+.stick-right {
+  background-color: var(--light-main-color);
+  height: 10px;
+  width: 200px;
+}
+
+.stick-left {
+  border-top-right-radius: 1000px;
+}
+
+.stick-right {
+  border-top-left-radius: 1000px;
+}
+
+.header {
+  font-size: 3.8rem;
+  font-weight: 600;
+  color: var(--light-main-color);
+  align-self: center;
+  font-family: 'Noto Serif Display', serif;
+  font-weight: 600;
+}
+
+.wrapper {
+  display: flex;
+  text-align: center;
+  height: fit-content;
+}
+
+.login,
+.register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-main-color);
+  padding: 4rem 10rem;
+  gap: 1.6rem;
+  height: auto;
+  width: 50rem;
+}
+
+.login {
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  gap: 1rem !important;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.login form input {
+  border: 1px solid var(--dark-main-color);
+  height: 2.4rem;
+  width: 25rem;
+  border-radius: 1rem;
+  padding: 0.2rem 0.8rem;
+  text-align: center;
+}
+
+.register {
+  background-color: var(--light-shade-color);
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.login h2,
+.register h2 {
+  font-size: 2.4rem;
+  color: var(--dark-main-color);
+  letter-spacing: 0.1rem;
+}
+
+.login p,
+.register p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.register a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  background-color: var(--dark-main-color);
+  color: var(--light-main-color);
+  border-radius: 4rem;
+  width: 25rem;
+  border: 3px solid transparent;
+  transition: 0.7s;
+}
+
+.login button {
+  margin-top: 1rem;
+  border: none;
+  color: var(--light-main-color);
+  background-color: var(--dark-main-color);
+  height: 3.4rem;
+  border: 3px solid transparent;
+  border-radius: 4rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.login button:hover,
+.register a:hover {
+  border: 3px solid purple;
+  background-color: var(--light-main-color);
+  color: var(--dark-main-color);
+}
+
+.login a {
+  color: var(--dark-main-color);
+  text-decoration: underline;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.error-msg {
+  color: red;
+  height: 1rem;
+  font-weight: 600;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Dates | Main</title>
+  <link rel="icon" type="image/x-icon" href="favicon-16x16.png">
+  <link rel="stylesheet" href="root.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <div class="logo">
+        <svg class="heart" viewBox="0 0 32 29.6">
+          <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+          c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+        </svg>
+        <div class="sticks">
+          <div class="class stick-left"></div>
+          <div class="class stick-right"></div>
+        </div>
+        <h1 class="header">Best Dates</h1>
+      </div>
+      <div class="wrapper">
+        <div class="login">
+          <h2>ALREADY A MEMBER ?</h2>
+          <p>Login and explore even more new people</p>
+          <p class="error-msg"></p>
+          <form method="post">
+            <input type="text" name="email" placeholder="Enter your e-mail" ngModel>
+            <input type="password" name="password" placeholder="Password" ngModel>
+            <button type="submit">Sign me in!</button>
+          </form>
+          <a>Forgot your password ?</a>
+        </div>
+        <div class="register">
+          <h2>ARE YOU NEW HERE ?</h2>
+          <p>Join us and start dating right now !</p>
+          <a href="/registration">Register now!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="login.js"></script>
+</body>
+
+</html>
